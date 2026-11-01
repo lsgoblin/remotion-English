@@ -1,0 +1,16 @@
+{
+	"name": "remotion-skills-dev",
+	"private": true,
+	"type": "module",
+	"version": "4.0.539",
+	"description": "本地开发工作区：改造 Remotion Agent Skills",
+	"scripts": {
+		"import": "node scripts/import.mjs",
+		"build": "node scripts/build.mjs",
+		"check": "node scripts/check.mjs",
+		"roundtrip": "node scripts/roundtrip.mjs",
+		"install:local": "node scripts/install.mjs",
+		"verify": "node scripts/check.mjs && node scripts/build.mjs && node scripts/check.mjs && node scripts/roundtrip.mjs",
+		"release": "node scripts/build.mjs && node scripts/roundtrip.mjs --update"
+	}
+}
